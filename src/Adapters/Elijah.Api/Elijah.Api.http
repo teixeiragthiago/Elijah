@@ -1,0 +1,6 @@
+@Elijah.Api_HostAddress = http://localhost:5030
+
+GET {{Elijah.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

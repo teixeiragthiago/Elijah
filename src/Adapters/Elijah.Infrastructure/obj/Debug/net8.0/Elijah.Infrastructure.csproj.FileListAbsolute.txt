@@ -1,0 +1,15 @@
+/Users/thiagoteixeira/Documents/Elijah/src/Adapters/Elijah.Infrastructure/obj/Debug/net8.0/Elijah.Infrastructure.csproj.AssemblyReference.cache
+/Users/thiagoteixeira/Documents/Elijah/src/Adapters/Elijah.Infrastructure/obj/Debug/net8.0/Elijah.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+/Users/thiagoteixeira/Documents/Elijah/src/Adapters/Elijah.Infrastructure/obj/Debug/net8.0/Elijah.Infrastructure.AssemblyInfoInputs.cache
+/Users/thiagoteixeira/Documents/Elijah/src/Adapters/Elijah.Infrastructure/obj/Debug/net8.0/Elijah.Infrastructure.AssemblyInfo.cs
+/Users/thiagoteixeira/Documents/Elijah/src/Adapters/Elijah.Infrastructure/obj/Debug/net8.0/Elijah.Infrastructure.csproj.CoreCompileInputs.cache
+/Users/thiagoteixeira/Documents/Elijah/src/Adapters/Elijah.Infrastructure/bin/Debug/net8.0/Elijah.Infrastructure.deps.json
+/Users/thiagoteixeira/Documents/Elijah/src/Adapters/Elijah.Infrastructure/bin/Debug/net8.0/Elijah.Infrastructure.dll
+/Users/thiagoteixeira/Documents/Elijah/src/Adapters/Elijah.Infrastructure/bin/Debug/net8.0/Elijah.Infrastructure.pdb
+/Users/thiagoteixeira/Documents/Elijah/src/Adapters/Elijah.Infrastructure/bin/Debug/net8.0/Elijah.Domain.dll
+/Users/thiagoteixeira/Documents/Elijah/src/Adapters/Elijah.Infrastructure/bin/Debug/net8.0/Elijah.Domain.pdb
+/Users/thiagoteixeira/Documents/Elijah/src/Adapters/Elijah.Infrastructure/obj/Debug/net8.0/Elijah.I.DCA18AF8.Up2Date
+/Users/thiagoteixeira/Documents/Elijah/src/Adapters/Elijah.Infrastructure/obj/Debug/net8.0/Elijah.Infrastructure.dll
+/Users/thiagoteixeira/Documents/Elijah/src/Adapters/Elijah.Infrastructure/obj/Debug/net8.0/refint/Elijah.Infrastructure.dll
+/Users/thiagoteixeira/Documents/Elijah/src/Adapters/Elijah.Infrastructure/obj/Debug/net8.0/Elijah.Infrastructure.pdb
+/Users/thiagoteixeira/Documents/Elijah/src/Adapters/Elijah.Infrastructure/obj/Debug/net8.0/ref/Elijah.Infrastructure.dll

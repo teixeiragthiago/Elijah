@@ -1,0 +1,11 @@
+/Users/thiagoteixeira/Documents/Elijah/src/Core/Elijah.Application/bin/Debug/net8.0/Elijah.Application.deps.json
+/Users/thiagoteixeira/Documents/Elijah/src/Core/Elijah.Application/bin/Debug/net8.0/Elijah.Application.dll
+/Users/thiagoteixeira/Documents/Elijah/src/Core/Elijah.Application/bin/Debug/net8.0/Elijah.Application.pdb
+/Users/thiagoteixeira/Documents/Elijah/src/Core/Elijah.Application/obj/Debug/net8.0/Elijah.Application.GeneratedMSBuildEditorConfig.editorconfig
+/Users/thiagoteixeira/Documents/Elijah/src/Core/Elijah.Application/obj/Debug/net8.0/Elijah.Application.AssemblyInfoInputs.cache
+/Users/thiagoteixeira/Documents/Elijah/src/Core/Elijah.Application/obj/Debug/net8.0/Elijah.Application.AssemblyInfo.cs
+/Users/thiagoteixeira/Documents/Elijah/src/Core/Elijah.Application/obj/Debug/net8.0/Elijah.Application.csproj.CoreCompileInputs.cache
+/Users/thiagoteixeira/Documents/Elijah/src/Core/Elijah.Application/obj/Debug/net8.0/Elijah.Application.dll
+/Users/thiagoteixeira/Documents/Elijah/src/Core/Elijah.Application/obj/Debug/net8.0/refint/Elijah.Application.dll
+/Users/thiagoteixeira/Documents/Elijah/src/Core/Elijah.Application/obj/Debug/net8.0/Elijah.Application.pdb
+/Users/thiagoteixeira/Documents/Elijah/src/Core/Elijah.Application/obj/Debug/net8.0/ref/Elijah.Application.dll
