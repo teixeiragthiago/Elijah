@@ -14,7 +14,6 @@
     <ItemGroup>
       <ProjectReference Include="..\..\Core\Elijah.Application\Elijah.Application.csproj" />
       <ProjectReference Include="..\..\Core\Elijah.Domain\Elijah.Domain.csproj" />
-      <ProjectReference Include="..\..\CrossCutting\Elijah.CrossCutting\Elijah.CrossCutting.csproj" />
       <ProjectReference Include="..\Elijah.Infrastructure\Elijah.Infrastructure.csproj" />
     </ItemGroup>
 

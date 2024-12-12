@@ -10,4 +10,8 @@
       <ProjectReference Include="..\Elijah.Domain\Elijah.Domain.csproj" />
     </ItemGroup>
 
+    <ItemGroup>
+      <PackageReference Include="FluentResults" Version="3.16.0" />
+    </ItemGroup>
+
 </Project>

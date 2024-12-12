@@ -9,3 +9,7 @@
 /Users/thiagoteixeira/Documents/Elijah/src/Core/Elijah.Application/obj/Debug/net8.0/refint/Elijah.Application.dll
 /Users/thiagoteixeira/Documents/Elijah/src/Core/Elijah.Application/obj/Debug/net8.0/Elijah.Application.pdb
 /Users/thiagoteixeira/Documents/Elijah/src/Core/Elijah.Application/obj/Debug/net8.0/ref/Elijah.Application.dll
+/Users/thiagoteixeira/Documents/Elijah/src/Core/Elijah.Application/bin/Debug/net8.0/Elijah.Domain.dll
+/Users/thiagoteixeira/Documents/Elijah/src/Core/Elijah.Application/bin/Debug/net8.0/Elijah.Domain.pdb
+/Users/thiagoteixeira/Documents/Elijah/src/Core/Elijah.Application/obj/Debug/net8.0/Elijah.Application.csproj.AssemblyReference.cache
+/Users/thiagoteixeira/Documents/Elijah/src/Core/Elijah.Application/obj/Debug/net8.0/Elijah.A.A9A6ED8D.Up2Date

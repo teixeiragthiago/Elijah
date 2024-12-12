@@ -14,50 +14,50 @@ public abstract class BaseRepository<TEntity> : IBaseRepository<TEntity> where T
         _context = context;
     }
 
-    public async Task<TEntity?> GetByIdAsync(Expression<Func<TEntity, bool>> filter)
+    public async Task<TEntity?> GetByIdAsync(Expression<Func<TEntity, bool>> filter, CancellationToken ct)
     {
-        return await _context.Set<TEntity>().FirstOrDefaultAsync(filter);
+        return await _context.Set<TEntity>().FirstOrDefaultAsync(filter, ct);
     }
 
-    public async Task<TEntity?> GetByIdAsync(Expression<Func<TEntity?, bool>> filter, params string[] include)
+    public async Task<TEntity?> GetByIdAsync(Expression<Func<TEntity?, bool>> filter, CancellationToken ct, params string[] include)
     {
         IQueryable<TEntity?> query = _context.Set<TEntity>().AsQueryable();
 
         query = include.Aggregate(query, (current, item) => current.Include(item).AsQueryable());
 
-        return await query.FirstOrDefaultAsync(filter);
+        return await query.FirstOrDefaultAsync(filter, ct);
     }
 
-    public async Task<IEnumerable<TEntity>> GetAsync(Expression<Func<TEntity, bool>> filter)
+    public async Task<IEnumerable<TEntity>> GetAsync(Expression<Func<TEntity, bool>> filter, CancellationToken ct)
     {
-        return await _context.Set<TEntity>().AsQueryable().Where(filter).ToListAsync();
+        return await _context.Set<TEntity>().AsQueryable().Where(filter).ToListAsync(ct);
     }
 
-    public async Task<IEnumerable<TEntity>> GetAsync(Expression<Func<TEntity, bool>> filter, params string[] include)
+    public async Task<IEnumerable<TEntity>> GetAsync(Expression<Func<TEntity, bool>> filter, CancellationToken ct, params string[] include)
     {
         var query = _context.Set<TEntity>().Where(filter);
 
         query = include.Aggregate(query, (current, item) => current.Include(item).AsQueryable());
 
-        return await query.ToListAsync();
+        return await query.ToListAsync(ct);
     }
 
-    public async Task<IEnumerable<TEntity>> GetAllAsync()
+    public async Task<IEnumerable<TEntity>> GetAllAsync(CancellationToken ct)
     {
-        return await _context.Set<TEntity>().ToListAsync();
+        return await _context.Set<TEntity>().ToListAsync(ct);
     }
 
-    public async Task<IEnumerable<TEntity>> GetAllAsync(params string[] include)
+    public async Task<IEnumerable<TEntity>> GetAllAsync(CancellationToken ct, params string[] include)
     {
         var query = _context.Set<TEntity>().AsQueryable();
         query = include.Aggregate(query, (current, item) => current.Include(item).AsNoTracking().AsQueryable());
-        return await query.ToListAsync();
+        return await query.ToListAsync(ct);
     }
 
-    public async Task<int> PostAsync(TEntity item)
+    public async Task<int> PostAsync(TEntity item, CancellationToken ct)
     {
         _context.Set<TEntity>().Add(item);
-        await _context.SaveChangesAsync();
+        await _context.SaveChangesAsync(ct);
 
         var idProperty = item.GetType().GetProperty("Id")?.GetValue(item, null);
 
@@ -67,40 +67,40 @@ public abstract class BaseRepository<TEntity> : IBaseRepository<TEntity> where T
         return (int)convertedId;
     }
 
-    public async Task Delete(TEntity item)
+    public async Task Delete(TEntity item, CancellationToken ct)
     {
         _context.Set<TEntity>().Remove(item);
-        await _context.SaveChangesAsync();
+        await _context.SaveChangesAsync(ct);
     }
 
-    public async Task Put(TEntity item)
+    public async Task Put(TEntity item, CancellationToken ct)
     {
         _context.Set<TEntity>().Attach(item);
         _context.Entry(item).State = EntityState.Modified;
-        await _context.SaveChangesAsync();
+        await _context.SaveChangesAsync(ct);
     }
 
-    public async Task<bool> AnyAsync(Expression<Func<TEntity, bool>> filter)
+    public async Task<bool> AnyAsync(Expression<Func<TEntity, bool>> filter, CancellationToken ct)
     {
-        return await _context.Set<TEntity>().AnyAsync(filter);
+        return await _context.Set<TEntity>().AnyAsync(filter, ct);
     }
 
-    public async Task<TEntity?> FirstAsync(Expression<Func<TEntity, bool>> filter)
+    public async Task<TEntity?> FirstAsync(Expression<Func<TEntity, bool>> filter, CancellationToken ct)
     {
-        return await _context.Set<TEntity>().FirstOrDefaultAsync(filter);
+        return await _context.Set<TEntity>().FirstOrDefaultAsync(filter, ct);
     }
 
-    public async Task<int> CountAsync(Expression<Func<TEntity, bool>> filter)
+    public async Task<int> CountAsync(Expression<Func<TEntity, bool>> filter, CancellationToken ct)
     {
-        return await _context.Set<TEntity>().CountAsync(filter);
+        return await _context.Set<TEntity>().CountAsync(filter, ct);
     }
 
-    public async Task<TEntity?> FirstAsync(Expression<Func<TEntity, bool>> filter, params string[] include)
+    public async Task<TEntity?> FirstAsync(Expression<Func<TEntity, bool>> filter, CancellationToken ct, params string[] include)
     {
         var query = _context.Set<TEntity>().AsQueryable();
 
         query = include.Aggregate(query, (current, item) => current.Include(item).AsQueryable());
 
-        return await query.FirstOrDefaultAsync(filter);
+        return await query.FirstOrDefaultAsync(filter, ct);
     }
 }
